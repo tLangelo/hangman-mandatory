@@ -83,12 +83,16 @@ public class Drawing {
             "        `-.....-'";
 
     public String dead = "            .-.\n" +
-            "           (0.0)\n" +
+            "           (X.X)\n" +
             "         '=.|m|.='\n" +
             "         .='`\"``=.";
 
-    public String[] stages = new String[8];
+    public String line = "------------LOSER-------------";
 
+
+    public String[] stages = new String[7];
+    // Could've just given each index in stages the string,
+    // but making variables of each stage makes it more readable(imo)
     public Drawing() {
         stages[0] = stage1;
         stages[1] = stage2;

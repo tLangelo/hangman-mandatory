@@ -23,8 +23,8 @@ public class FileUtil {
     public void initFile(Difficulty difficulty) {
         while (scanner.hasNext()) {
             String currLine = scanner.nextLine();
-            String[] splitLine = currLine.split(",");
-
+            String[] splitLine = currLine.split(","); // Using split to differentiate between easy/hard
+            // If statement to get the words based on difficulty(to avoid having 2 arraylists)
             if (difficulty == Difficulty.DIFFICULTY_EASY) {
                 wordList.add(splitLine[0]);
             }
